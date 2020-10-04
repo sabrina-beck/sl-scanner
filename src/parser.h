@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 /* Avoids warnings */
 int yylex();
 int fileno(FILE *);
