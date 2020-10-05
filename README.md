@@ -43,3 +43,15 @@ variable `yytext` to be printed.
 
 ### Obs
 The `all.zip` file mentioned had the files contained in the directory `tests` and the files `src/parser.h` and `test_scanner.c`.
+
+## Project Execution
+
+In order to run the program that uses the produced scanner use the following command:
+```
+make run
+```
+
+In order to run the tests use:
+```
+make test
+```
