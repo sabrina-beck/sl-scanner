@@ -4,7 +4,7 @@ run:
 	./build/test_scanner
 
 test: build
-	mkdir build/tests
+	mkdir -p build/tests
 	./runtests.sh
 
 build:
