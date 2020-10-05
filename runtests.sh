@@ -22,6 +22,6 @@ for testFile in tests/input/*; do
   then
     echo -e " | ${RED}FAILED${NO_COLOR}"
   else
-    echo -e " | ${RED}SUCCESS${NO_COLOR}"
+    echo -e " | ${GREEN}SUCCESS${NO_COLOR}"
   fi
 done

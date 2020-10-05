@@ -10,6 +10,7 @@ LETTER  [a-z]
 %%
     /* Comments */
 "//".*
+" "*
 
     /* Line count */
 \n          line_num++;
