@@ -1,10 +1,11 @@
+SHELL := bash
 
 run:
 	./build/test_scanner
 
 test: build
-	mkdir build/tests_output
-	@for f in $(shell ls tests/input/); do echo $${f} | cut -c 3-4; done
+	mkdir build/tests
+	./runtests.sh
 
 build:
 	mkdir build
