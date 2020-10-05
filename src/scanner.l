@@ -71,5 +71,5 @@ while       return(WHILE);
 {LETTER}({LETTER}|{DIGIT})*     return(IDENTIFIER);
 
     /* Lexical error if didn't match any of the above patterns */
-    /*.*          return LEXICAL_ERROR;*/
+.          yyerror();return(LEXICAL_ERROR);
 %%
