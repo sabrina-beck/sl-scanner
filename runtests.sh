@@ -7,6 +7,8 @@ NO_COLOR='\033[0m'
 buildDir="build/"
 testResultDir="${buildDir}tests/"
 
+mkdir -p $testResultDir
+
 for testFile in tests/input/*; do
 
   testNumber=$(echo $testFile | cut -c 15-16)
