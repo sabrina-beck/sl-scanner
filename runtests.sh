@@ -11,7 +11,7 @@ mkdir -p $testResultDir
 
 for testFile in tests/input/*; do
 
-  testNumber=$(echo $testFile | cut -c 15-16)
+  testNumber=$(echo $testFile | sed -e 's/[^0-9]//g')
   echo -n "Running test $testNumber"
 
   testResultFile="tokens$testNumber.res"
