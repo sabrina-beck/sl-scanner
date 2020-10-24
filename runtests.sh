@@ -14,10 +14,9 @@ for testFile in tests/input/*; do
   testNumber=$(echo $testFile | sed -e 's/[^0-9]//g')
   echo -n "Running test $testNumber"
 
-  testResultFile="tokens$testNumber.res"
-  testResultPath="${testResultDir}${testResultFile}"
+  testResultPath=$(find tests/output -regextype posix-egrep -regex ".*$testNumber.*")
 
-  ./build/test_scanner < $testFile > $testResultPath
+  ./build/main < $testFile > $testResultPath
 
   DIFF=$(diff $testResultPath tests/output/${testResultFile})
   if [ "$DIFF" != "" ]
