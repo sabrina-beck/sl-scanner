@@ -12,4 +12,4 @@ build:
 	gcc -std=c99 -pedantic -I src/ -o build/main src/*.c src/*.h build/scanner.c
 
 clean:
-	rm -r build
+	rm -rf build
